@@ -1,0 +1,46 @@
+{
+  "name": "pbringetto/oauth2-snapchat",
+  "description": "Snapchat OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "pbringetto",
+      "email": "plbriqto@gmail.com",
+      "homepage": "https://github.com/pbringetto"
+    }
+  ],
+  "keywords": [
+    "oauth",
+    "oauth2",
+    "client",
+    "authorization",
+    "authorisation",
+    "snapchat",
+    "api"
+  ],
+  "require": {
+    "league/oauth2-client": "^2.0",
+    "jakeasmith/http_build_url": "^1.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "League\\OAuth2\\Client\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "League\\OAuth2\\Client\\Test\\": "test/src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
+
+
+

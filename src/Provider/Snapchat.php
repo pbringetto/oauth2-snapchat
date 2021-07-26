@@ -140,7 +140,7 @@ class Snapchat extends AbstractProvider
     {
         if ($response->getStatusCode() >= 400) {
             throw new IdentityProviderException(
-                $data['message'] ?: $response->getReasonPhrase(),
+                $data['error'] ?: $response->getReasonPhrase(),
                 $response->getStatusCode(),
                 $response
             );

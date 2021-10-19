@@ -131,7 +131,7 @@ class Snapchat extends AbstractProvider
      * Check a provider response for errors.
      *
      * @link   https://instagram.com/developer/endpoints/
-     * @throws IdentityProviderException
+     * @throws SnapchatIdentityProviderException
      * @param  ResponseInterface $response
      * @param  string $data Parsed response data
      * @return void
@@ -140,7 +140,7 @@ class Snapchat extends AbstractProvider
     {
         if ($response->getStatusCode() >= 400) {
             throw new IdentityProviderException(
-                $data['error'] ?: $response->getReasonPhrase(),
+                $data['error'] ?? $response->getReasonPhrase(),
                 $response->getStatusCode(),
                 $response
             );
